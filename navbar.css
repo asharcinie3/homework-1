@@ -8,11 +8,14 @@
 }
 
 .navbar {
+    display: inline-block; 
+    vertical-align: middle; 
+}
+
+#header {
     text-align: left;
     margin-left: 20px; 
     color: #333; 
-    display: inline-block; 
-    vertical-align: middle; 
 }
 
 .links {
