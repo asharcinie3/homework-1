@@ -30,6 +30,7 @@
 .links li {
     display: inline-block;
     padding: 20px; 
+    padding-top: 0;
 }
 
 .links li:hover {
