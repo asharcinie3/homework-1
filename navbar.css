@@ -16,13 +16,15 @@
 
 #header {
     text-align: left;
-    margin-left: 40px; 
+    margin-left: 60px; 
+    margin-bottom: 40px;
     color: #022D3D; 
 }
 
 .links {
     text-align: right;
-    margin-right: 40px; 
+    margin-right: 60px; 
+    margin-bottom: 40px;
     list-style-type: none;
     padding: 0; 
 }
