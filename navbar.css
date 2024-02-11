@@ -1,11 +1,12 @@
 .topnav {
     width: 100%;
     position: sticky;
-    top: 0
+    top: 0;
 }
 
 .topnav .p {
     text-align: left;
+
 }
 
 .links {
@@ -15,5 +16,4 @@
 .img {
     width: 100%;
     height: 40px;
-    top: 0;
 }
