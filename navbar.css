@@ -1,0 +1,13 @@
+.topnav {
+    width: 100%;
+    position: sticky;
+    top: 0
+}
+
+.topnav .p {
+    text-align: left;
+}
+
+.links {
+    text-align: right;
+}
