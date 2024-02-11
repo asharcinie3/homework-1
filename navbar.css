@@ -2,38 +2,40 @@
     width: 100%;
     position: sticky;
     top: 0;
-    background-color: #1F5673;
-    color: white;
+    background-color: #222;
+    color: black;
 }
 
 .topnav .p {
     text-align: left;
-    margin-right: 40px;
+    margin-left: 40px;
 }
 
 .links {
     text-align: right;
-    margin: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-top: -40px;
     list-style-type: none;
-    font-weight: 900;
 }
 
-li {
+.links li {
     display: inline-block;
     padding: 40px;
+    color: white;
 }
 
-li:hover {
+.links li:hover {
     opacity: 0.5;
     transition: opacity ease-in-out 0.2s;
 }
 
-a {
+.links a {
     text-decoration: none;
     padding: 10px;
 }
 
-a:visited {
+.links a:visited {
     text-decoration: none;
     color: white;
 }
