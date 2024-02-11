@@ -1,0 +1,7 @@
+.description {
+    flex-direction: column;
+}
+
+.col-2 {
+    flex-direction: row;
+}
