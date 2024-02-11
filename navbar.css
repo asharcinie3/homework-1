@@ -2,7 +2,7 @@
     width: 100%;
     position: sticky;
     top: 0;
-    background-color: #f3f3f3; 
+    background-color: #222; 
     padding: 0; 
     margin: 0; 
     font-size: large;
@@ -18,7 +18,7 @@
     text-align: left;
     margin-left: 40px; 
     margin-top: 20px;
-    color: #022D3D; 
+    color: white; 
 }
 
 .links {
@@ -42,11 +42,11 @@
 
 .links a {
     text-decoration: none;
-    color: black; 
+    color: white; 
 }
 
 .links a:visited {
-    color: black;
+    color: white;
 }
 
 .banner {
