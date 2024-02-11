@@ -33,3 +33,16 @@ body {
     padding: 20px 30px;
     border-radius: 15px;
 }
+
+.fun-facts {
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3f3;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    margin: 15px;
+    padding: 20px 30px;
+    border-radius: 15px;
+}
