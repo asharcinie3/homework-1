@@ -3,12 +3,17 @@
     position: sticky;
     top: 0;
     background-color: #222;
-    color: black;
 }
 
-.topnav .p {
+#header {
     text-align: left;
     margin-left: 40px;
+    color: white;
+}
+
+.nav-bar {
+    display: inline-block;
+    padding: 40px;
 }
 
 .links {
