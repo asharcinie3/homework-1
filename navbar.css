@@ -17,14 +17,14 @@
 #header {
     text-align: left;
     margin-left: 40px; 
-    margin-top: 40px;
+    margin-top: 20px;
     color: #022D3D; 
 }
 
 .links {
     text-align: right;
     margin-right: 40px; 
-    margin-bottom: 40px;
+    padding-bottom: 40px;
     list-style-type: none;
     padding: 0; 
 }
