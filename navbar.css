@@ -11,3 +11,8 @@
 .links {
     text-align: right;
 }
+
+.img {
+    width: full;
+    height: 60px;
+}
