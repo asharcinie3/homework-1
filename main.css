@@ -175,6 +175,7 @@ h2 {
     position: relative;
     z-index: 1;
     color: black;
+    transition: transform 0.1s, box-shadow 0.1s;
 }
 
 .w2 {
@@ -194,12 +195,17 @@ h2 {
     position: relative;
     z-index: 2;
     color: white;
+    transition: transform 0.1s, box-shadow 0.1s;
 }
 
 .piano p {
     display: none;
 }
 
+.key-pressed {
+    transform: translateY(2px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
 
 #f, #k {
     margin-left: 0px;
