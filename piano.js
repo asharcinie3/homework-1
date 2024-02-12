@@ -50,11 +50,11 @@ document.addEventListener('DOMContentLoaded', function() {
         sequence += keyPressed;
 
         if (!sequence.startsWith('weseeyou')) {
-            sequence = ''; // Reset sequence if it doesn't start with the correct sequence
+            sequence = ''; 
         }
 
         if (sequence.length > 8) {
-            sequence = ''; // Reset sequence if it becomes too long
+            sequence = ''; 
         }
 
         if (sequence == 'weseeyou') {
@@ -67,8 +67,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const creepyAudio = new Audio('https://orangefreesounds.com/wp-content/uploads/2020/09/Creepy-piano-sound-effect.mp3?_=1');
             creepyAudio.play();
-
-            sequence = '';
         }
 
         playSoundAndAnimate(keyPressed);
