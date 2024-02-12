@@ -8,17 +8,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     pianoKeys.forEach(function(key) {
         key.addEventListener('mouseover', function() {
-            const keyText = this.querySelector('.key-text');
-            if (keyText) {
-                keyText.style.display = 'block';
-            }
+            const allKeyTexts = document.querySelector('.key-text');
+            allKeyTexts.forEach(function(text) {
+                text.style.display = 'block';
+            });
         });
 
         key.addEventListener('mouseout', function() {
-            const keyText = this.querySelector('.key-text');
-            if (keyText) {
-                keyText.style.display = 'none';
-            }
+            const allKeyTexts = document.querySelectorAll('.key-text');
+            allKeyTexts.forEach(function(text) {
+                text.style.display = 'none';
+            });
         });
     });
 });
