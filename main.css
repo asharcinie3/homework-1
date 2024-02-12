@@ -126,7 +126,7 @@ h2 {
 }
 
 .piano {
-    background-color: #f3f3f3;
+    background-color: black;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -134,9 +134,26 @@ h2 {
     max-width: 80vw;
 }
 
+.poem {
+    font-style: italic;
+    width: auto;
+}
+
 .piano-keys {
     width: 80%;
+    height: 75%;
+}
+
+.white-key {
+    height: 100%;
+    background-color: white;
+}
+
+.black-key {
+    height: 40%;
     background-color: black;
+    border-radius: 15px;
+    justify-content: flex-start;
 }
 
 
