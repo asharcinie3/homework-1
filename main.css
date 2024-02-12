@@ -135,48 +135,8 @@ h2 {
 }
 
 .piano-keys {
-    display:inline-block;
     width: 80%;
-}
-
-.first {
-    display: flex;
-    flex-direction: row;
-    width: 25%;
-    height: 80%;
     background-color: black;
-    border-radius: 15px;
 }
 
-.second {
-    display: flex;
-    flex-direction: row;
-    width: 40%;
-    height: 40%;
-    background-color: black;
-    border-radius: 15px;
-}
-
-.third{
-    display: flex;
-    flex-direction: row;
-    width: 25%;
-    height: 40%;
-    background-color: black;
-    border-radius: 15px;
-}
-
-.white-key {
-    background-color: white;
-    border-radius: 15px;
-    height: 100%;
-    justify-content: flex-start;
-}
-
-.black-key {
-    background-color: black;
-    border-radius: 15px;
-    height: 40%;
-    justify-content: flex-start;
-}
 
