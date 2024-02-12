@@ -116,6 +116,13 @@ h2 {
 .great-one {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    max-height: 50vh;
+    max-width: 80vw;
+    overflow: hidden; 
+    margin: 20px;
+    padding: 20px;
+    background-color: #f3f3f3;
 }
 
 .piano {
