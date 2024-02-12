@@ -90,6 +90,10 @@ h2 {
     border-width: 5px;
 }
 
+#pd {
+    margin-bottom: 0px;
+}
+
 /* Transition to single column layout for smaller screens */
 @media screen and (max-width: 650px) {
     .info {
