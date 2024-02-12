@@ -21,10 +21,11 @@
     }
 
     .menu-icon {
+        display: flex;
         align-items: flex-end;
-        margin-top: -20px;
         height: 1em; 
         width: auto; 
+        padding: 15px;
     }
 
     .links.mobile .linkedin-icon {
