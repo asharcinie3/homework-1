@@ -5,39 +5,9 @@ function toggleMenu() {
 
 document.addEventListener('DOMContentLoaded', function() {
     const pianoKeysContainer = document.querySelector('.piano-keys');
+    let sequence = ''; // Track the sequence of keys typed
 
-    pianoKeysContainer.addEventListener('mouseover', function(event) {
-        const allKeyTexts = document.querySelectorAll('.key-text');
-        allKeyTexts.forEach(function(text) {
-            text.style.display = 'none';
-        });
-
-        const dataKey = event.target.dataset.key;
-        if (dataKey) {
-            const keyText = event.target.querySelector('.key-text');
-            if (keyText) {
-                keyText.style.display = 'block';
-            }
-        }
-    });
-
-    pianoKeysContainer.addEventListener('click', function(event) {
-        const dataKey = event.target.dataset.key;
-        if (dataKey) {
-            const soundURL = sound[dataKey];
-            const audio = new Audio(soundURL);
-            audio.play();
-            
-            const pressedKey = event.target;
-            if (pressedKey) {
-                pressedKey.classList.add('key-pressed');
-                setTimeout(function() {
-                    pressedKey.classList.remove('key-pressed');
-                }, 200);
-            }
-        }
-    });
-
+    // Object to store the sound URLs for each key
     const sound = {
         "65": "http://carolinegabriel.com/demo/js-keyboard/sounds/040.wav",
         "87": "http://carolinegabriel.com/demo/js-keyboard/sounds/041.wav",
@@ -58,10 +28,9 @@ document.addEventListener('DOMContentLoaded', function() {
         "186": "http://carolinegabriel.com/demo/js-keyboard/sounds/056.wav"
     };
 
-    document.addEventListener('keydown', function(event) {
-        const keyPressed = event.key.toLowerCase(); // Convert to lowercase to match the keys
+    // Function to play sound and animate pressed key
+    function playSoundAndAnimate(keyPressed) {
         const soundURL = sound[keyPressed];
-
         if (soundURL) {
             const audio = new Audio(soundURL);
             audio.play();
@@ -73,6 +42,61 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(function() {
                 pressedKey.classList.remove('key-pressed');
             }, 200);
+        }
+    }
+
+    // Event listener for keydown events
+    document.addEventListener('keydown', function(event) {
+        const keyPressed = event.key.toLowerCase();
+        const soundURL = sound[keyPressed];
+
+        // Add key to the sequence
+        sequence += keyPressed;
+
+        // Check if the sequence matches the trigger sequence
+        if (sequence === 'weseeyou') {
+            // Fade out the piano
+            const piano = document.querySelector('.piano');
+            piano.style.transition = 'opacity 2s';
+            piano.style.opacity = 0;
+
+            // Show the image of the Great Old One
+            const greatOne = document.querySelector('.great-one');
+            greatOne.style.display = 'block';
+
+            // Play creepy audio
+            const creepyAudio = new Audio('https://orangefreesounds.com/wp-content/uploads/2020/09/Creepy-piano-sound-effect.mp3?_=1');
+            creepyAudio.play();
+
+            // Disable further key presses
+            document.removeEventListener('keydown', handleKeyPress);
+        }
+
+        // Play sound and animate pressed key
+        playSoundAndAnimate(keyPressed);
+    });
+
+    // Event listener for mouseover events
+    pianoKeysContainer.addEventListener('mouseover', function(event) {
+        const allKeyTexts = document.querySelectorAll('.key-text');
+        allKeyTexts.forEach(function(text) {
+            text.style.display = 'none';
+        });
+
+        const dataKey = event.target.dataset.key;
+        if (dataKey) {
+            const keyText = event.target.querySelector('.key-text');
+            if (keyText) {
+                keyText.style.display = 'block';
+            }
+        }
+    });
+
+    // Event listener for click events
+    pianoKeysContainer.addEventListener('click', function(event) {
+        const dataKey = event.target.dataset.key;
+        if (dataKey) {
+            playSoundAndAnimate(dataKey);
         }
     });
 });
