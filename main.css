@@ -131,9 +131,8 @@ h2 {
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    width: 80vw;
-    height: 50vh;
-    height: 70%;
+    max-width: 80vw;
+    max-height: 50vh;
     padding: 20px;
 }
 
