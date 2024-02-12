@@ -103,6 +103,7 @@ h2 {
         justify-content: center;
         width: auto;
         max-height: none;
+        max-width: none;
     }
     .col-1 {
         width: auto;
