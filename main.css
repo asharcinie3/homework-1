@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: justify;
 }
 
@@ -62,7 +63,7 @@ body {
 .fun-facts {
     display: flex;
     flex-direction: column;
-    max-width: 60vw;
+    max-width: 70vw;
     background-color: #f3f3f3;
     justify-content: center;
     border-radius: 15px;
