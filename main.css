@@ -103,6 +103,7 @@ h2 {
         justify-content: center;
         width: auto;
         height: auto;
+        overflow: scroll;
     }
     .col-1, .col-2 {
         width: auto;
