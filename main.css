@@ -16,28 +16,9 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-
-#project-description {
-    width: 80%;
-}
-
-.project-head {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    text-align: center;
-}
-
-.project-head h1 {
-    font-weight: bold;
-    margin-bottom: 0;
-}
-
-.project-head p {
-    margin-top: 10px;
+    max-height: 50vh;
+    max-width: 80vw;
+    overflow: auto; /* Enable scroll bar for overflow */
 }
 
 .col-1 {
@@ -45,7 +26,7 @@ body {
     border-radius: 15px;
     margin: 24px;
     padding: 20px;
-    width: 30%;
+    width: 50%; /* Equal-sized columns */
     display: flex;
     justify-content: center; /* Horizontally center */
 }
@@ -59,17 +40,7 @@ body {
     margin: 24px;
     padding: 20px 30px;
     border-radius: 15px;
-    max-height: 50vh;
-    max-width: 80vw;
-    margin: auto;
-}
-
-#home-col-2 {
-    width: 60%;
-}
-
-#project-col-2 {
-    width: 40%;
+    width: 50%; /* Equal-sized columns */
 }
 
 .fun-facts {
@@ -78,32 +49,31 @@ body {
     background-color: #f3f3f3;
     justify-content: center;
     border-radius: 15px;
-    width: 91%;
+    width: 80vw; /* Adjusted for single column content */
+    margin: auto; /* Center the content */
     padding: 40px;
     padding-bottom: 20px;
     border-radius: 15px;
-    justify-content: flex-start;
 }
 
 h2 {
     margin-bottom: 0px;
 }
 
-
+/* Adjust image styling */
 .col-1 img {
     width: 100%; /* Ensure the image fills the container */
     border-radius: 15px;
-    margin: auto; /* Center the image within the container */
+    object-fit: cover; /* Ensure the image covers the container */
 }
 
-.more {
-    display: flex;
-    justify-content: center;
-    color: #222;
-}
-
-.foot {
-    background-color: #0C425D;
-    text-align: right;
-    padding: 24px;
+/* Transition to single column layout for smaller screens */
+@media screen and (max-width: 650px) {
+    .description {
+        flex-direction: column;
+    }
+    .col-1,
+    .col-2 {
+        width: 100%; /* Full width for single column layout */
+    }
 }
