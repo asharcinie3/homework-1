@@ -31,6 +31,8 @@ body {
 .project-head {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 .project-head h1 {
