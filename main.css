@@ -100,6 +100,9 @@ h2 {
     .description {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        width: auto;
+        height: auto;
     }
     .col-1,
     .col-2 {
