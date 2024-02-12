@@ -95,6 +95,7 @@ h2 {
     .info {
         display: flex;
         flex-direction: column;
+        overflow: auto;
     }
     .description {
         flex-direction: column;
