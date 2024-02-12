@@ -6,11 +6,22 @@ function toggleMenu() {
 document.addEventListener('DOMContentLoaded', function() {
     const pianoKeysContainer = document.querySelector('.piano-keys');
 
-    pianoKeysContainer.addEventListener('mouseover', function() {
+    pianoKeysContainer.addEventListener('mouseover', function(event) {
         const allKeyTexts = document.querySelectorAll('.key-text');
         allKeyTexts.forEach(function(text) {
             text.style.display = 'block';
         });
+
+        const dataKey = event.target.dataset.key;
+        if (dataKey) {
+            const pressedKey = document.querySelector(`.piano-key[data-key="${dataKey}"]`);
+            if (pressedKey) {
+                pressedKey.classList.add('key-pressed');
+                setTimeout(function() {
+                    pressedKey.classList.remove('key-pressed');
+                }, 200);
+            }
+        }
     });
 
     pianoKeysContainer.addEventListener('mouseout', function() {
@@ -19,9 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
             text.style.display = 'none';
         });
     });
-});
 
-document.addEventListener('DOMContentLoaded', function() {
     const sound = {
         65:"http://carolinegabriel.com/demo/js-keyboard/sounds/040.wav",
         87:"http://carolinegabriel.com/demo/js-keyboard/sounds/041.wav",
@@ -46,21 +55,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const keyPressed = event.keyCode;
         const soundURL = sound[keyPressed];
 
-        // Play sound if available
         if (soundURL) {
             const audio = new Audio(soundURL);
             audio.play();
         }
 
-        // Get the corresponding HTML element for the pressed key
         const pressedKey = document.querySelector(`.piano-key[data-key="${keyPressed}"]`);
-
-        // Check if there is a corresponding HTML element
         if (pressedKey) {
-            // Add a class to indicate that the key is pressed
             pressedKey.classList.add('key-pressed');
-
-            // Remove the class after a short delay to revert the style
             setTimeout(function() {
                 pressedKey.classList.remove('key-pressed');
             }, 200);
