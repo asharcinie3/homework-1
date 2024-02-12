@@ -22,6 +22,7 @@ body {
     flex-direction: row;
     justify-content: center;
     margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 #project-description {
