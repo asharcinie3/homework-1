@@ -47,11 +47,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const keyPressed = event.key.toLowerCase();
         const soundURL = sound[keyPressed];
 
-        if (sequence.length >= 8 || !sequence.startsWith("weseeyou")) {
-            sequence = '';
-        }
-
         sequence += keyPressed;
+
+        if (sequence.length > 8) {
+            sequence = sequence.slice(1);
+        }
 
         if (sequence === 'weseeyou') {
             const piano = document.querySelector('.piano');
