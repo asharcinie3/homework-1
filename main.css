@@ -7,10 +7,14 @@ body {
 .info {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 .description {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
     margin-top: 24px;
     width: 80%;
