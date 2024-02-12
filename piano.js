@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "186": "http://carolinegabriel.com/demo/js-keyboard/sounds/056.wav"
     };
 
-    function playSoundAndAnimate(keyPressed) {
+    const playSoundAndAnimate = function(keyPressed) {
         const soundURL = sound[keyPressed];
         if (soundURL) {
             const audio = new Audio(soundURL);
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 pressedKey.classList.remove('key-pressed');
             }, 200);
         }
-    }
+    };
 
     document.addEventListener('keydown', function(event) {
         const keyPressed = event.key.toLowerCase();
@@ -49,12 +49,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         sequence += keyPressed;
 
-        if (!sequence.startsWith('weseeyou')) {
-            sequence = ''; 
+        if (!/^weseeyou/.test(sequence)) {
+            sequence = '';
         }
 
         if (sequence.length > 8) {
-            sequence = ''; 
+            sequence = '';
         }
 
         if (sequence == 'weseeyou') {
@@ -67,6 +67,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const creepyAudio = new Audio('https://orangefreesounds.com/wp-content/uploads/2020/09/Creepy-piano-sound-effect.mp3?_=1');
             creepyAudio.play();
+
+            sequence = '';
         }
 
         playSoundAndAnimate(keyPressed);
