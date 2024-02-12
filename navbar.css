@@ -21,7 +21,7 @@
     }
 
     .menu-icon {
-        right: 0;
+        align-items: flex-end;
         margin-top: -20px;
         height: 1em; 
         width: auto; 

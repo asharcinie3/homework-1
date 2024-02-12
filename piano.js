@@ -1,6 +1,6 @@
 function toggleMenu() {
     var mobileLinks = document.querySelector('.links.mobile');
-    mobileLinks.style.display = (mobileLinks.style.display === 'block') ? 'none' : 'block';
+    mobileLinks.style.display = (mobileLinks.style.display === 'flex') ? 'none' : 'flex';
 }
 
 document.addEventListener('DOMContentLoaded', function() {
