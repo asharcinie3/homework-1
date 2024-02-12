@@ -65,7 +65,7 @@ body {
 .fun-facts {
     display: flex;
     flex-direction: column;
-    max-width: 70vw;
+    max-width: 75vw;
     background-color: #f3f3f3;
     justify-content: center;
     border-radius: 15px;
