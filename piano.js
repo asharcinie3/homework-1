@@ -49,8 +49,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         sequence += keyPressed;
 
+        if (!sequence.startsWith('weseeyou')) {
+            sequence = ''; // Reset sequence if it doesn't start with the correct sequence
+        }
+
         if (sequence.length > 8) {
-            sequence = sequence.slice(1);
+            sequence = ''; // Reset sequence if it becomes too long
         }
 
         if (sequence === 'weseeyou') {
