@@ -85,7 +85,8 @@ h2 {
 .col-1 img {
     width: 100%;
     border-radius: 15px;
-    object-fit: cover; 
+    object-fit: contain; 
+    overflow: hidden;
 }
 
 /* Transition to single column layout for smaller screens */
