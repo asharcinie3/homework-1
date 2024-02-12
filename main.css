@@ -10,9 +10,10 @@ body {
 }
 .description {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     margin-top: 24px;
-    width: 75%;
+    width: 80%;
 }
 
 .col-1 {
