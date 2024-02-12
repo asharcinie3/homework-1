@@ -144,6 +144,11 @@ h2 {
     color: white;
 }
 
+.piano h2 {
+    padding-bottom: 40px;
+    font-style: oblique;
+}
+
 .piano-keys {
     display: flex;
     flex-direction: row;
