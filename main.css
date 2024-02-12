@@ -13,13 +13,14 @@ body {
 
 .description {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
     margin-top: 24px;
 }
 
 #project-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80%;
 }
 
@@ -83,5 +84,6 @@ img {
 }
 
 .more {
+    display: flex;
     justify-content: center;
 }
