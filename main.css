@@ -124,15 +124,22 @@ h2 {
     overflow: hidden; 
     margin: 20px;
     padding: 20px;
-    background-color: #f3f3f3;
 }
 
 .piano {
+    background-color: #f3f3f3;
+    border-radius: 15px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+.piano-keys {
+    display:inline-block;
 }
 
 .first {
+    display: flex;
+    flex-direction: row;
     width: 25%;
     height: 80%;
     background-color: black;
@@ -140,6 +147,8 @@ h2 {
 }
 
 .second {
+    display: flex;
+    flex-direction: row;
     width: 40%;
     height: 40%;
     background-color: black;
@@ -147,6 +156,8 @@ h2 {
 }
 
 .third{
+    display: flex;
+    flex-direction: row;
     width: 25%;
     height: 40%;
     background-color: black;
