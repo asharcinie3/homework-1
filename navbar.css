@@ -1,3 +1,28 @@
+@media screen and (max-width: 650px) {
+    .links {
+        display: none; /* Hide the nav links */
+    }
+
+    .menu-icon {
+        display: inline-block; /* Display the menu icon */
+    }
+
+    .links.mobile {
+        display: block; /* Display the mobile menu links */
+        text-align: center;
+    }
+}
+
+.menu-icon {
+    display: none; /* Initially hide the menu icon */
+}
+
+/* Styles for the mobile menu */
+.links.mobile li {
+    display: block;
+    padding: 10px; /* Adjust padding as needed */
+}
+
 .topnav {
     width: 100%;
     position: sticky;
