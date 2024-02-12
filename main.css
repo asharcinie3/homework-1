@@ -91,6 +91,10 @@ h2 {
 
 /* Transition to single column layout for smaller screens */
 @media screen and (max-width: 650px) {
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
     .description {
         flex-direction: column;
     }
