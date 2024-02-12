@@ -1,39 +1,54 @@
+/* Hide menu icon by default */
+.menu-icon {
+    display: none; 
+}
+
+/* Show navigation links by default */
+.links {
+    display: block; 
+}
+
+/* Hide navigation links on screens less than 650px */
 @media screen and (max-width: 650px) {
     .links {
         display: none; 
     }
 
+    /* Display menu icon */
     .menu-icon {
         display: inline-block; 
     }
 
+    /* Display links in mobile menu */
     .links.mobile {
         display: block; 
         text-align: center;
     }
-    .links .linkedin-text {
-        display: inline-block; 
+
+    /* Hide LinkedIn icon in mobile menu */
+    .links.mobile .linkedin-icon {
+        display: none; 
     }
 
-    .links .linkedin-icon {
-        display: none; 
+    /* Display LinkedIn text in mobile menu */
+    .links.mobile .linkedin-text {
+        display: inline-block; 
     }
 }
 
+/* Style for LinkedIn icon */
 .links .linkedin-icon {
     height: 1em; 
     width: auto; 
     vertical-align: middle; 
 }
 
+/* Hide LinkedIn text by default */
 .links .linkedin-text {
     display: none; 
 }
 
-.menu-icon {
-    display: none; 
-}
-
+/* Display links in block style in mobile menu */
 .links.mobile li {
     display: block;
     padding: 10px; 
