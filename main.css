@@ -11,6 +11,13 @@ body {
     align-items: center;
 }
 
+.info-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .description {
     display: flex;
     flex-direction: row;
@@ -18,9 +25,6 @@ body {
 }
 
 #project-description {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 80%;
 }
 
