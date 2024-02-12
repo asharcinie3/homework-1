@@ -1,26 +1,43 @@
 @media screen and (max-width: 650px) {
     .links {
-        display: none; /* Hide the nav links */
+        display: none; 
     }
 
     .menu-icon {
-        display: inline-block; /* Display the menu icon */
+        display: inline-block; 
     }
 
     .links.mobile {
-        display: block; /* Display the mobile menu links */
+        display: block; 
         text-align: center;
+    }
+    .links .linkedin-text {
+        display: inline-block; 
+    }
+
+    .links .linkedin-icon {
+        display: none; 
     }
 }
 
+.links .linkedin-icon {
+    height: 1em; 
+    width: auto; 
+    vertical-align: middle; 
+}
+
+.links .linkedin-text {
+    display: none; 
+}
+
 .menu-icon {
-    display: none; /* Initially hide the menu icon */
+    display: none; 
 }
 
 /* Styles for the mobile menu */
 .links.mobile li {
     display: block;
-    padding: 10px; /* Adjust padding as needed */
+    padding: 10px; 
 }
 
 .topnav {
