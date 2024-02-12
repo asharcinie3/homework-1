@@ -114,34 +114,14 @@ h2 {
 
 /* piano */
 
-.great-one {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; 
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 90%;
-    background-color: #f3f3f3
-}
-
-.poem {
-    font-style: italic;
-    width: auto;
-    font-size: large;
-}
-
 .piano {
-    background-color: #24292F;
     border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     max-width: 80vw;
     max-height: 50vh;
     padding: 20px;
     color: white;
+    background-color: #24292F;
+    text-align: center; /* Center the content inside piano */
 }
 
 .piano h2 {
@@ -155,6 +135,12 @@ h2 {
     justify-content: center;
     width: 80%;
     height: 75%;
+    position: relative; /* Ensure positioning context for absolute positioning */
+}
+
+.white-key,
+.black-key {
+    position: absolute; /* Position the keys absolutely within the piano-keys container */
 }
 
 .white-key {
@@ -162,17 +148,25 @@ h2 {
     width: 40px;
     background-color: #D3D4D5;
     padding: 5px;
-    justify-content: flex-start;
     border-radius: 15px;
 }
 
 .black-key {
-    height: 100px;
+    height: 125px;
     width: 20px;
     background-color: black;
     border-radius: 15px;
-    justify-content: flex-start;
     padding: 5px;
+}
+
+/* Adjust the positioning of the black keys */
+.black-key:nth-child(odd) {
+    top: 0;
+    margin-top: -100px; /* Move odd-indexed black keys up by the height of the key */
+}
+
+.black-key:nth-child(even) {
+    top: 200px; /* Position even-indexed black keys below the white keys */
 }
 
 
