@@ -41,6 +41,10 @@ body {
     margin-bottom: 0;
 }
 
+.project-head p {
+    padding-top: 10px;
+}
+
 .col-1 {
     display: flex;
     justify-content: center;
