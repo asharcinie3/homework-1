@@ -22,10 +22,11 @@
 
     .menu-icon {
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
         height: 1em; 
         width: auto; 
         padding: 15px;
+        margin-top: 0;
     }
 
     .links.mobile .linkedin-icon {
