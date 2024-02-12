@@ -127,7 +127,7 @@ h2 {
 }
 
 .piano {
-    background-color: white;
+    background-color: blue;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -151,7 +151,8 @@ h2 {
 }
 
 .white-key {
-    height: 100%;
+    height: 50px;
+    width: 10px;
     background-color: white;
     padding: 5px;
     justify-content: flex-start;
@@ -159,7 +160,8 @@ h2 {
 }
 
 .black-key {
-    height: 30%;
+    height: 20px;
+    width: 8px;
     background-color: black;
     border-radius: 15px;
     justify-content: flex-start;
