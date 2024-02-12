@@ -53,6 +53,7 @@ body {
     margin: 24px;
     padding: 40px;
     border-radius: 15px;
+    justify-content: flex-start;
 }
 
 h2 {
