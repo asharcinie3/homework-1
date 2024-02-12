@@ -23,11 +23,6 @@
         vertical-align: middle;
     }
 
-    .links.mobile {
-        display: block; 
-        text-align: center;
-    }
-
     .links.mobile .linkedin-icon {
         display: none; 
     }
