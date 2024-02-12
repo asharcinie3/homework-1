@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
 }
 
 .info-project {
@@ -22,7 +22,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 16px;
 }
 
 #project-description {
