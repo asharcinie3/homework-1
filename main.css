@@ -113,3 +113,23 @@ h2 {
 
 /* piano */
 
+.great-one {
+    display: flex;
+    flex-direction: column;
+}
+
+.piano {
+    display: flex;
+    flex-direction: row;
+}
+
+.white-key {
+    background-color: white;
+    border-radius: 15px;
+}
+
+.black-key {
+    background-color: black;
+    border-radius: 15px;
+}
+
