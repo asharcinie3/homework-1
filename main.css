@@ -47,9 +47,6 @@ body {
     justify-content: center; 
     margin: 20px;
     overflow: hidden;
-    border-color: #222;
-    border-width: 3px;
-    border-style: solid;
 }
 
 .col-2 {
@@ -85,6 +82,9 @@ h2 {
     border-radius: 15px;
     object-fit: contain; 
     margin-top: -10px;
+    border-color: #222;
+    border-width: 3px;
+    border-style: solid;
 }
 
 #pd {
