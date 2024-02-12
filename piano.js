@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
             sequence = ''; // Reset sequence if it becomes too long
         }
 
-        if (sequence === 'weseeyou') {
+        if (sequence == 'weseeyou') {
             const piano = document.querySelector('.piano');
             piano.style.transition = 'opacity 2s';
             piano.style.opacity = 0;
