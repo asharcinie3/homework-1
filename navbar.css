@@ -34,7 +34,6 @@
     display: none; 
 }
 
-/* Styles for the mobile menu */
 .links.mobile li {
     display: block;
     padding: 10px; 
@@ -49,6 +48,7 @@
     margin: 0; 
     font-size: large;
     font-weight: bold;
+    color: white;
 }
 
 .navbar {
@@ -61,7 +61,6 @@
     margin-left: 40px; 
     margin-top: 20px;
     margin-bottom: 20px;
-    color: white; 
 }
 
 .links {
