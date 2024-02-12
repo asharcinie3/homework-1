@@ -170,6 +170,7 @@ h2 {
     border-style: solid;
     border-width: 3px;
     border-color: black;
+    position: relative;
 }
 
 .w2 {
@@ -184,6 +185,7 @@ h2 {
     justify-content: flex-start;
     padding: 5px;
     margin-left: -15px;
+    position: relative;
 }
 
 
