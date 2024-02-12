@@ -39,15 +39,31 @@ document.addEventListener('DOMContentLoaded', function() {
         79:"http://carolinegabriel.com/demo/js-keyboard/sounds/053.wav",
         76:"http://carolinegabriel.com/demo/js-keyboard/sounds/054.wav",
         80:"http://carolinegabriel.com/demo/js-keyboard/sounds/055.wav",
-        186:"http://carolinegabriel.com/demo/js-keyboard/sounds/056.wav"};
+        186:"http://carolinegabriel.com/demo/js-keyboard/sounds/056.wav"
+    };
 
     document.addEventListener('keydown', function(event) {
         const keyPressed = event.keyCode;
         const soundURL = sound[keyPressed];
-        
+
+        // Play sound if available
         if (soundURL) {
             const audio = new Audio(soundURL);
             audio.play();
+        }
+
+        // Get the corresponding HTML element for the pressed key
+        const pressedKey = document.querySelector(`.piano-key[data-key="${keyPressed}"]`);
+
+        // Check if there is a corresponding HTML element
+        if (pressedKey) {
+            // Add a class to indicate that the key is pressed
+            pressedKey.classList.add('key-pressed');
+
+            // Remove the class after a short delay to revert the style
+            setTimeout(function() {
+                pressedKey.classList.remove('key-pressed');
+            }, 200);
         }
     });
 });
