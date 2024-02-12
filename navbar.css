@@ -23,10 +23,9 @@
     .menu-icon {
         display: flex;
         align-items: flex-end; 
+        margin-top: -20px;
         height: 1em; 
         width: auto; 
-        vertical-align: middle;
-        right: 0;
     }
 
     .links.mobile .linkedin-icon {
