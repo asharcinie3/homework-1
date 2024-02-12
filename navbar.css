@@ -56,6 +56,10 @@
     vertical-align: middle; 
 }
 
+#header {
+    margin-left: 40px;
+}
+
 #nav {
     text-align: left;
     margin-left: 40px; 
