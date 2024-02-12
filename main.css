@@ -98,6 +98,7 @@ h2 {
         overflow: auto;
     }
     .description {
+        display: flex;
         flex-direction: column;
     }
     .col-1,
