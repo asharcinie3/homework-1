@@ -21,8 +21,8 @@
     }
 
     .menu-icon {
-        display: flex;
-        justify-content: flex-start;
+        display: inline-block;
+        justify-content: right;
         height: 1em; 
         width: auto; 
         padding: 15px;
