@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-direction: row;
     margin-top: 24px;
+    width: 75%;
 }
 
 .col-1 {
