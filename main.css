@@ -16,11 +16,10 @@ body {
 
 .col-1 {
     align-items: center;
-    justify-content: center;
     vertical-align: center;
     background-color: #f3f3f3;
     border-radius: 15px;
-    width: 45%;
+    width: 30%;
     margin: 24px;
     padding: 20px;
 }
@@ -31,7 +30,7 @@ body {
     background-color: #f3f3f3;
     border-radius: 15px;
     align-items: center;
-    width: 80%;
+    width: 60%%;
     margin: 24px;
     padding: 20px 30px;
     border-radius: 15px;
@@ -54,6 +53,10 @@ h2 {
 }
 
 img {
-    width: 75%;
+    width: 50%;
     border-radius: 15px;
+}
+
+.more {
+    align-items: center;
 }
