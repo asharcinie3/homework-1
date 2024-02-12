@@ -21,8 +21,7 @@
     }
 
     .menu-icon {
-        display: flex;
-        align-items: flex-end;
+        right: 0;
         height: 1em; 
         width: auto; 
         padding: 15px;
