@@ -114,6 +114,24 @@ h2 {
 
 /* piano */
 
+.great-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 90%;
+    background-color: #f3f3f3;
+}
+
+.poem {
+    font-style: italic;
+    width: auto;
+    font-size: large;
+}
+
 .piano {
     border-top-left-radius: 32;
     border-top-right-radius: 32;
