@@ -130,6 +130,24 @@ h2 {
     flex-direction: row;
 }
 
+.first {
+    width: 25%;
+    background-color: black;
+    border-radius: 15px;
+}
+
+.second {
+    width: 40%;
+    background-color: black;
+    border-radius: 15px;
+}
+
+.third{
+    width: 25;
+    background-color: black;
+    border-radius: 15px;
+}
+
 .white-key {
     background-color: white;
     border-radius: 15px;
