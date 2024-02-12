@@ -28,6 +28,15 @@ body {
     width: 80%;
 }
 
+.project-head {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-head h1 {
+    font-weight: bold;
+}
+
 .col-1 {
     display: flex;
     justify-content: center;
