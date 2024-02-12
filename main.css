@@ -17,6 +17,9 @@ body {
     align-items: center;
     flex-direction: row;
     margin-top: 24px;
+}
+
+#project-description {
     width: 80%;
 }
 
@@ -41,19 +44,20 @@ body {
     padding: 20px 30px;
     border-radius: 15px;
 }
-.home-col-1 {
+
+#home-col-1 {
     width: 25%;
 }
 
-.home-col-2 {
+#home-col-2 {
     width: 60%;
 }
 
-.project-col-1 {
+#project-col-1 {
     width: 50%
 }
 
-.project-col-2 {
+#project-col-2 {
     width: 25%;
 }
 
