@@ -102,7 +102,7 @@ h2 {
         flex-direction: column;
         justify-content: center;
         width: auto;
-        height: auto;
+        height: 500px;
         overflow: scroll;
     }
     .col-1, .col-2 {
