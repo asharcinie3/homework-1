@@ -4,21 +4,19 @@ function toggleMenu() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    const pianoKeys = document.querySelectorAll('.piano-key');
+    const pianoKeysContainer = document.querySelector('.piano-keys');
 
-    pianoKeys.forEach(function(key) {
-        key.addEventListener('mouseover', function() {
-            const allKeyTexts = document.querySelector('.key-text');
-            allKeyTexts.forEach(function(text) {
-                text.style.display = 'block';
-            });
+    pianoKeysContainer.addEventListener('mouseover', function() {
+        const allKeyTexts = document.querySelectorAll('.key-text');
+        allKeyTexts.forEach(function(text) {
+            text.style.display = 'block';
         });
+    });
 
-        key.addEventListener('mouseout', function() {
-            const allKeyTexts = document.querySelectorAll('.key-text');
-            allKeyTexts.forEach(function(text) {
-                text.style.display = 'none';
-            });
+    pianoKeysContainer.addEventListener('mouseout', function() {
+        const allKeyTexts = document.querySelectorAll('.key-text');
+        allKeyTexts.forEach(function(text) {
+            text.style.display = 'none';
         });
     });
 });
