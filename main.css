@@ -175,14 +175,14 @@ h2 {
 }
 
 .w2 {
-    margin-left: -16px;
+    margin-left: -14px;
 }
 
 .black-key {
-    height: 100px;
+    height: 200px;
     width: 20px;
     background-color: black;
-    border-radius: 10px;
+    border-radius: 5px;
     justify-content: flex-start;
     padding: 5px;
     margin-left: -15px;
