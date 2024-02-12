@@ -169,6 +169,9 @@ h2 {
     padding: 5px;
     justify-content: flex-start;
     border-radius: 15px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
 }
 
 .black-key {
