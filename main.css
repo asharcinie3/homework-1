@@ -166,7 +166,6 @@ h2 {
     height: 300px;
     width: 50px;
     background-color: #D3D4D5;
-    justify-content: flex-start;
     border-radius: 10px;
     border-style: solid;
     border-width: 3px;
@@ -174,6 +173,8 @@ h2 {
     position: relative;
     z-index: 1;
     color: black;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .w2 {
@@ -190,10 +191,11 @@ h2 {
     position: relative;
     z-index: 2;
     color: white;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .piano p{
-    
     padding: 5px;
 }
 
