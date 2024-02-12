@@ -16,6 +16,10 @@
         display: none; 
     }
 
+    .links.mobile {
+        display: none; 
+    }
+
     .menu-icon {
         display: inline-block; 
         height: 1em; 
