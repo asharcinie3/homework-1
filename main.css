@@ -9,6 +9,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 16px;
 }
 
 .info-project {
@@ -22,7 +23,6 @@ body {
     flex-direction: row;
     justify-content: center;
     margin-top: 16px;
-    margin-bottom: 16px;
 }
 
 #project-description {
@@ -55,6 +55,7 @@ body {
     border-radius: 15px;
     margin: 24px;
     padding: 20px;
+    width: 30%;
 }
 
 .col-2 {
@@ -68,16 +69,8 @@ body {
     border-radius: 15px;
 }
 
-#home-col-1 {
-    width: 30%;
-}
-
 #home-col-2 {
     width: 60%;
-}
-
-#project-col-1 {
-    width: 30%
 }
 
 #project-col-2 {
