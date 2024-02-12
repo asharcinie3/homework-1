@@ -21,8 +21,7 @@
     }
 
     .menu-icon {
-        position: absolute;
-        right: 0;
+        margin-left: 80%;
         margin-right: 10px;
         height: 1em; 
         width: auto; 
