@@ -204,8 +204,8 @@ body {
 }
 
 .key-pressed {
-    transform: translateY(2px);
-    box-shadow: 0px 0px 10px #073544;
+    transform: translateY(3px);
+    box-shadow: 0px 0px 15px #073544;
 }
 
 #f, #k {
