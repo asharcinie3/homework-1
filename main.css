@@ -165,7 +165,7 @@ h2 {
     width: 50px;
     background-color: #D3D4D5;
     justify-content: flex-start;
-    border-radius: 15px;
+    border-radius: 10px;
     border-style: solid;
     border-width: 3px;
     border-color: black;
@@ -175,7 +175,7 @@ h2 {
     height: 100px;
     width: 20px;
     background-color: black;
-    border-radius: 15px;
+    border-radius: 10px;
     justify-content: flex-start;
     padding: 5px;
     margin-left: -10px;
