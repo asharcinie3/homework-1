@@ -5,11 +5,11 @@ function toggleMenu() {
 
 document.addEventListener('DOMContentLoaded', function() {
     const pianoKeysContainer = document.querySelector('.piano-keys');
-    const allKeyTexts = document.querySelectorAll('.key-text');
 
     pianoKeysContainer.addEventListener('mouseover', function(event) {
+        const allKeyTexts = document.querySelectorAll('.key-text');
         allKeyTexts.forEach(function(text) {
-            text.style.display = 'block';
+            text.style.display = 'none';
         });
 
         const dataKey = event.target.dataset.key;
@@ -21,10 +21,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    pianoKeysContainer.addEventListener('mouseout', function() {
-        allKeyTexts.forEach(function(text) {
-            text.style.display = 'none';
-        });
+    pianoKeysContainer.addEventListener('click', function(event) {
+        const dataKey = event.target.dataset.key;
+        if (dataKey) {
+            const soundURL = sound[dataKey];
+            const audio = new Audio(soundURL);
+            audio.play();
+            
+            const pressedKey = event.target;
+            if (pressedKey) {
+                pressedKey.classList.add('key-pressed');
+                setTimeout(function() {
+                    pressedKey.classList.remove('key-pressed');
+                }, 200);
+            }
+        }
     });
 
     const sound = {
