@@ -32,27 +32,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     const sound = {
-        65:"http://carolinegabriel.com/demo/js-keyboard/sounds/040.wav",
-        87:"http://carolinegabriel.com/demo/js-keyboard/sounds/041.wav",
-        83:"http://carolinegabriel.com/demo/js-keyboard/sounds/042.wav",
-        69:"http://carolinegabriel.com/demo/js-keyboard/sounds/043.wav",
-        68:"http://carolinegabriel.com/demo/js-keyboard/sounds/044.wav",
-        70:"http://carolinegabriel.com/demo/js-keyboard/sounds/045.wav",
-        84:"http://carolinegabriel.com/demo/js-keyboard/sounds/046.wav",
-        71:"http://carolinegabriel.com/demo/js-keyboard/sounds/047.wav",
-        89:"http://carolinegabriel.com/demo/js-keyboard/sounds/048.wav",
-        72:"http://carolinegabriel.com/demo/js-keyboard/sounds/049.wav",
-        85:"http://carolinegabriel.com/demo/js-keyboard/sounds/050.wav",
-        74:"http://carolinegabriel.com/demo/js-keyboard/sounds/051.wav",
-        75:"http://carolinegabriel.com/demo/js-keyboard/sounds/052.wav",
-        79:"http://carolinegabriel.com/demo/js-keyboard/sounds/053.wav",
-        76:"http://carolinegabriel.com/demo/js-keyboard/sounds/054.wav",
-        80:"http://carolinegabriel.com/demo/js-keyboard/sounds/055.wav",
-        186:"http://carolinegabriel.com/demo/js-keyboard/sounds/056.wav"
+        "a": "http://carolinegabriel.com/demo/js-keyboard/sounds/040.wav",
+        "w": "http://carolinegabriel.com/demo/js-keyboard/sounds/041.wav",
+        "s": "http://carolinegabriel.com/demo/js-keyboard/sounds/042.wav",
+        "e": "http://carolinegabriel.com/demo/js-keyboard/sounds/043.wav",
+        "d": "http://carolinegabriel.com/demo/js-keyboard/sounds/044.wav",
+        "f": "http://carolinegabriel.com/demo/js-keyboard/sounds/045.wav",
+        "t": "http://carolinegabriel.com/demo/js-keyboard/sounds/046.wav",
+        "g": "http://carolinegabriel.com/demo/js-keyboard/sounds/047.wav",
+        "y": "http://carolinegabriel.com/demo/js-keyboard/sounds/048.wav",
+        "h": "http://carolinegabriel.com/demo/js-keyboard/sounds/049.wav",
+        "u": "http://carolinegabriel.com/demo/js-keyboard/sounds/050.wav",
+        "j": "http://carolinegabriel.com/demo/js-keyboard/sounds/051.wav",
+        "k": "http://carolinegabriel.com/demo/js-keyboard/sounds/052.wav",
+        "o": "http://carolinegabriel.com/demo/js-keyboard/sounds/053.wav",
+        "l": "http://carolinegabriel.com/demo/js-keyboard/sounds/054.wav",
+        "p": "http://carolinegabriel.com/demo/js-keyboard/sounds/055.wav",
+        ";": "http://carolinegabriel.com/demo/js-keyboard/sounds/056.wav"
     };
 
     document.addEventListener('keydown', function(event) {
-        const keyPressed = event.keyCode;
+        const keyPressed = event.key.toLowerCase(); // Convert to lowercase to match the keys
         const soundURL = sound[keyPressed];
 
         if (soundURL) {
