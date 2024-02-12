@@ -48,6 +48,7 @@ body {
     overflow: hidden;
     border-color: #222;
     border-width: 5px;
+    border-style: solid;
 }
 
 .col-2 {
