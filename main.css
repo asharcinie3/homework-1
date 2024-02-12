@@ -46,6 +46,8 @@ body {
     justify-content: center; 
     margin: 20px;
     overflow: hidden;
+    border-color: #222;
+    border-width: 5px;
 }
 
 .col-2 {
@@ -87,8 +89,6 @@ h2 {
     width: 100%;
     border-radius: 15px;
     object-fit: contain; 
-    border-color: #222;
-    border-width: 5px;
 }
 
 #pd {
