@@ -130,7 +130,8 @@ h2 {
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 80vw;
+    height: 50vh;
     height: 70%;
     padding: 20px;
 }
@@ -138,9 +139,12 @@ h2 {
 .poem {
     font-style: italic;
     width: auto;
+    font-size: large;
 }
 
 .piano-keys {
+    display: flex;
+    flex-direction: row;
     width: 80%;
     height: 75%;
 }
@@ -148,6 +152,7 @@ h2 {
 .white-key {
     height: 100%;
     background-color: white;
+    padding: 5px;
 }
 
 .black-key {
@@ -155,6 +160,7 @@ h2 {
     background-color: black;
     border-radius: 15px;
     justify-content: flex-start;
+    padding: 5px;
 }
 
 
