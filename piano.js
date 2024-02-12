@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
             piano.style.opacity = 0;
 
             // Show the image of the Great Old One
-            const greatOne = document.querySelector('.great-one');
+            const greatOne = document.querySelector('.great-one-img');
             greatOne.style.display = 'block';
 
             // Play creepy audio

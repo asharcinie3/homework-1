@@ -130,6 +130,10 @@ h2 {
     font-size: x-large;
 }
 
+.great-one-img {
+    display: none;
+}
+
 .piano {
     background-color: #24292F;
     border-top-left-radius: 30px;
