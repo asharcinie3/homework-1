@@ -21,8 +21,8 @@
     }
 
     .menu-icon {
-        margin-left: 80%;
-        margin-right: 10px;
+        display: flex;
+        justify-content: flex-end;
         height: 1em; 
         width: auto; 
         padding: 15px;
