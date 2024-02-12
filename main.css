@@ -102,7 +102,7 @@ h2 {
         flex-direction: column;
         justify-content: center;
         width: auto;
-        height: 800px;
+        max-height: none;
     }
     .col-1 {
         width: auto;
