@@ -134,9 +134,7 @@ h2 {
 
 .piano {
     background-color: #24292F;
-    border-radius: 15;
-    border-top-left-radius: 30;
-    border-top-right-radius: 30;
+    border-radius: 30;
     display: flex;
     flex-direction: column;
     justify-content: center;
